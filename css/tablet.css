@@ -1,0 +1,17 @@
+
+@media screen and (max-width: 768px) {
+
+  #nav-container > div {
+      display: none;
+    }
+    /* #nav-container p {
+      
+      width: 24%;
+    } */
+    .certificate> img {
+      width: 100%;
+    }
+    .project {
+      margin: 10px;
+    }
+  }
