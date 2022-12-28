@@ -1,57 +1,19 @@
+/* reset css */
 * {
     margin: 0px;
     padding: 0px;
 }
 
+
 body {
     background-color: #f5f5f5;
 }
 
-#myBtn {
-    display: none;
-}
-.test {
-  padding-bottom: 50px;
-  transition: all 0.5s;
-}
-.test:hover #myBtn {
-    display: block;
-    transform: translateX(-50);
+section {
+    font-family: sans-serif;
+    color: #373f47;
 }
 
-
-#lang-content {
-  display: none;
-}
-
-#myBtnLang {
-  display: none;
-}
-#lang {
-padding-bottom: 50px;
-transition: all 0.5s;
-}
-#lang:hover #myBtnLang {
-  display: block;
-  transform: translateX(-50);
-}
-
-#activity-content {
-  display: none;
-}
-
-#myBtnActivity {
-  display: none;
-}
-
-#activity {
-padding-bottom: 50px;
-transition: all 0.5s;
-}
-#activity:hover #myBtnActivity {
-  display: block;
-  transform: translateX(-50);
-}
 
 .nar-icon {
     color: #199cdb;
@@ -92,24 +54,11 @@ transition: all 0.5s;
     padding: 3px;
 }
 
-section {
-    font-family: sans-serif;
-    color: #373f47;
-}
-
-
-/* section > .container{
-    display: flex;
-    padding: 0% 2% 0% 2%;
-    align-items: stretch;
-} */
-
+ /* navigation section  */
 #banner {
     width: 100%;
     background-color: #252222;
-    /* Used if the image is unavailable */
-    height: 400px;
-    /* You must set a specified height */
+    height: 500px;
 }
 
 .bg-grey {
@@ -124,13 +73,7 @@ section {
 }
 
 #target {
-    /* text-align: left; */
     padding: 10px;
-    /* float: left;
-  width: 40%; */
-    /* background-color: #f5f5f5; */
-    /* margin-right: 8%;
-  margin-left: 10px; */
 }
 
 #nav-container {
@@ -158,33 +101,75 @@ section {
 
 .dev {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     color: white;
     transform: translate(-50%, -50%);
 }
 
+ /* end navigation section  */
 
-/* #nav-bar {
-    text-align: center;
-} */
-
-#personal-info {
+ #personal-info {
     padding: 10px;
-    /* float: left;
-    width: 40%; */
-    /* margin-right: 10%; */
-    /* margin-left: 0px; */
 }
 
 
-/* #myBtn {
-  display: none;
-} */
-
-#experience-content {
+ /* experience section */
+ #experience-content {
     display: none;
 }
+
+#myBtn {
+    display: none;
+}
+.test {
+  padding-bottom: 50px;
+  transition: all 0.5s;
+}
+.test:hover #myBtn {
+    display: block;
+    transform: translateX(-50);
+}
+ /* end experience section */
+
+ /* language section */
+#lang-content {
+  display: none;
+}
+
+#myBtnLang {
+  display: none;
+}
+#lang {
+padding-bottom: 50px;
+transition: all 0.5s;
+}
+#lang:hover #myBtnLang {
+  display: block;
+  transform: translateX(-50);
+}
+
+ /* end language section */
+
+  /* activity section */
+#activity-content {
+  display: none;
+}
+
+#myBtnActivity {
+  display: none;
+}
+
+#activity {
+padding-bottom: 50px;
+transition: all 0.5s;
+}
+#activity:hover #myBtnActivity {
+  display: block;
+  transform: translateX(-50);
+}
+  /* end activity section */
+
 
 ul {
     list-style: none;
@@ -193,10 +178,8 @@ ul {
 
 ul li::before {
     content: "\2022";
-    /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: blue;
     font-weight: bold;
-    /* If you want it to be bold */
     display: inline-block;
     /* Needed to add space between the bullet and the text */
     width: 1em;
@@ -240,39 +223,18 @@ ul li::before {
     text-align: center;
 }
 
+
 .certificate {
     border: #d6c08d solid 1px;
 }
 
-
-/* .certificate> img {
-    width: 100%;
-    float: left;
-  } */
-
-
-/* 
-  .certificate > div {
-    width: 60%;
-    float: left;
-    /* height: max-content; */
 
 .section-title {
     display: block;
     width: 100%;
 }
 
-
-/* .projects {
-    display: flex;
-  }
-  .project {
-    float: left;
-    padding: 10px;
-    width: 33%;
-    border: 0.001px ridge rgb(194, 194, 194);
-  } */
-
+/* project section */
 .project-title {
     font-family: sans-serif;
     padding: 10px;
@@ -310,6 +272,9 @@ th {
     border-top: 0.8px solid rgb(131, 124, 124);
 }
 
+/* end project section */
+
+/* footer section */
 #footer {
     width: 100%;
     display: flex;
@@ -327,3 +292,4 @@ th {
     font-size: x-large;
     color: #199cdb;
 }
+/* end  footer section */

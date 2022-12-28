@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +16,7 @@
 </head>
 
 <body>
+	<!-- navigation section -->
 	<section id="nav-bar">
 		<div class="dev">
 			<h1 class="name ">Nguyễn Văn A</h1>
@@ -29,9 +31,10 @@
 			<p><a href="#">dự án &nbsp;<i class="fa-solid fa-star nar-icon"></i></a></p>
 		</div>
 	</section>
+	<!-- personal info section -->
 	<section id="about" class="bg-grey">
 		<div class="container info ">
-			<div class="row p-1 m-1" >
+			<div class="row p-1 m-1">
 				<div id="target" class="col-sm-12 col-lg-6 ">
 					<h1 class="section-title">Mục tiêu nghề nghiệp</h1>
 					<div class="clearfix visible-xs">
@@ -47,13 +50,14 @@
 				<div id="input-info" class="col-sm-12 col-lg-6">
 					<form id="formPersonal">
 						<div class="mb-3">
-						  <label for="exampleInputEmail1" class="form-label">Thông tin cá nhân</label>
-						  <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
-						  <div id="emailHelp" class="form-text">hãy nhập mail để xác thực</div>
-						  <span class="text-danger" id="error"></span>
+							<label for="exampleInputEmail1" class="form-label">Thông tin cá nhân</label>
+							<input type="email" class="form-control" id="exampleInputEmail"
+								aria-describedby="emailHelp">
+							<div id="emailHelp" class="form-text">hãy nhập mail để xác thực</div>
+							<span class="text-danger" id="error"></span>
 						</div>
-						<button t class="btn btn-primary" onclick=" return logSubmit()">Submit</button>
-					  </form>
+						<button class="btn btn-primary" onclick=" return logSubmit()">Submit</button>
+					</form>
 				</div>
 				<div id="personal-info" class="col-sm-12 col-lg-6" style="display: none;">
 					<h1 class="section-title">Thông tin cá nhân</h1>
@@ -71,24 +75,25 @@
 						<i class="icon-linkedin " style="font-size: large; color: aqua;"></i>
 					</p>
 				</div>
-			</div>		
+			</div>
 		</div>
 	</section>
 	<section id="job-info">
 		<div class="container">
 			<div class="row p-1 m-1">
-				<div class="col-xs-12 col-sm-6 col-lg-4" >
+				<!-- experience section -->
+				<div class="col-xs-12 col-sm-6 col-lg-4">
 					<div style="display: flex;">
 						<div style="width: 75%;">
-							<h1 >Kinh nghiệm</h1>
+							<h1>Kinh nghiệm</h1>
 						</div>
 						<div style="width: 25%;">
 							<i class="ic-toolbox " style="font-size: xx-large;"></i>
 						</div>
 					</div>
-					<div  id="experience" class="test">
+					<div id="experience" class="test">
 						<div id="experience-content">
-							<ul >
+							<ul>
 								<li>
 									<div>
 										<p class="timeline">05/2022 - <span class="now">Hiện tại</span></p>
@@ -111,9 +116,11 @@
 								</li>
 							</ul>
 						</div>
-						<button onclick="viewMoreAndLess('myBtn', 'experience-content')" id="myBtn" type="button" class="btn btn-primary">+ View more</button>
+						<button onclick="viewMoreAndLess('myBtn', 'experience-content')" id="myBtn" type="button"
+							class="btn btn-primary">+ View more</button>
 					</div>
 				</div>
+				<!-- skill section -->
 				<div class="col-xs-12 col-sm-6 col-lg-4">
 					<div style="display: flex;">
 						<div style="width: 75%;">
@@ -153,7 +160,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-6 col-lg-4" >
+				<!-- language section -->
+				<div class="col-xs-12 col-sm-6 col-lg-4">
 					<div style="display: flex;">
 						<div style="width: 75%;">
 							<h1>Ngôn ngữ</h1>
@@ -163,7 +171,7 @@
 						</div>
 					</div>
 					<div id="lang">
-						<div id="lang-content"> 
+						<div id="lang-content">
 							<p>Tiếng anh : IELTS 7.0</p>
 							<div>
 								<span class="level"></span>
@@ -176,17 +184,18 @@
 								<span class="level" style="height: 5px;"></span>
 							</div>
 						</div>
-						<button onclick="viewMoreAndLess('myBtnLang', 'lang-content')" id="myBtnLang" type="button" class="btn btn-primary">+ View more</button>
+						<button onclick="viewMoreAndLess('myBtnLang', 'lang-content')" id="myBtnLang" type="button"
+							class="btn btn-primary">+ View more</button>
 					</div>
 				</div>
-				
-			</div>							
+			</div>
 		</div>
 	</section>
 	<section>
 		<div class="container">
 			<div class="row p-1 m-1">
-				<div class="col-xs-12 col-sm-6 col-lg-4">			
+				<!-- activity section -->
+				<div class="col-xs-12 col-sm-6 col-lg-4">
 					<div style="display: flex;">
 						<div style="width: 75%;">
 							<h1>Hoạt động</h1>
@@ -206,11 +215,12 @@
 								<p>Đề tài: Trang web về phân loại rác thải.</p>
 							</div>
 						</div>
-						<button onclick="viewMoreAndLess('myBtnActivity', 'activity-content')" id="myBtnActivity" 
-						type="button" class="btn btn-primary">+ View more</button>
+						<button onclick="viewMoreAndLess('myBtnActivity', 'activity-content')" id="myBtnActivity"
+							type="button" class="btn btn-primary">+ View more</button>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-6 col-lg-4">		
+				<!-- hobby  section -->
+				<div class="col-xs-12 col-sm-6 col-lg-4">
 					<div style="display: flex;">
 						<div style="width: 75%;">
 							<h1>Sở thích</h1>
@@ -238,6 +248,7 @@
 						</div>
 					</div>
 				</div>
+				<!-- study section -->
 				<div class="col-xs-12 col-sm-6 col-lg-4">
 					<div style="display: flex;">
 						<div style="width: 75%;">
@@ -247,7 +258,7 @@
 							<i class="ic-pencil " style="font-size: xx-large;"></i>
 						</div>
 					</div>
-					
+
 					<div>
 						<div class="child">
 							<p class="timeline">06/2021 - 05/2022</p>
@@ -259,9 +270,10 @@
 						</div>
 					</div>
 				</div>
-			</div>						
+			</div>
 		</div>
 	</section>
+	<!-- certificate section -->
 	<section id="certificate" class="bg-grey">
 		<div class="container">
 			<h1 class="section-title">
@@ -278,7 +290,7 @@
 							<p>- CCDN</p>
 							<p>- GPA: 8.6</p>
 						</div>
-					</div>				
+					</div>
 				</div>
 				<div class="certificate col-xs-12 col-sm-6 col-lg-4">
 					<div class="row">
@@ -290,7 +302,7 @@
 							<p>- CCDN</p>
 							<p>- GPA: 8.6</p>
 						</div>
-					</div>	
+					</div>
 				</div>
 				<div class="certificate col-xs-12 col-sm-6 col-lg-4">
 					<div class="row">
@@ -302,14 +314,14 @@
 							<p>- CCDN</p>
 							<p>- GPA: 8.6</p>
 						</div>
-					</div>	
+					</div>
 				</div>
 			</div>
 		</div>
-		
-	</section>
 
-	<section id="project" >
+	</section>
+	<!-- project section -->
+	<section id="project">
 		<div class="container">
 			<div class="section-title">
 				<h1>
@@ -331,15 +343,15 @@
 							</div>
 							<div class="col-xs-12 col-sm-12 col-lg-6 d-inline-block">
 								<p><i class="icon-lamp"></i><span> Developer</span></p>
-								
+
 							</div>
-						</div>					
+						</div>
 					</div>
 					<table class="project-content">
 						<tr>
 							<td>Mô tả </td>
 							<td>
-								Trang Web CV cá nhân online. Gồm các thông tin cá nhân 
+								Trang Web CV cá nhân online. Gồm các thông tin cá nhân
 								cũng như kỹ năng nghề nghiệp.
 							</td>
 						</tr>
@@ -353,7 +365,7 @@
 						</tr>
 					</table>
 				</div>
-				
+
 				<div class="project col-xs-12 col-sm-12 col-lg-4 ">
 					<img src="images/project_2.png" alt="Girl in a jacket">
 					<div class="project-title">
@@ -370,13 +382,13 @@
 								<i class="icon-lamp"></i>
 								<span> Developer</span>
 							</div>
-						</div>	
+						</div>
 					</div>
 					<table class="project-content">
 						<tr>
 							<td>Mô tả </td>
 							<td>
-								rang Web xem tin tức từ nhiều nguồn khác nhau, 
+								rang Web xem tin tức từ nhiều nguồn khác nhau,
 								người dùng có thể tìm kiếm các tin tức dựa theo các từ khóa.
 							</td>
 						</tr>
@@ -406,7 +418,7 @@
 								<i class="icon-lamp"></i>
 								<span> Developer</span>
 							</div>
-						</div>	
+						</div>
 					</div>
 					<table class="project-content">
 						<tr>
@@ -428,23 +440,25 @@
 			</div>
 		</div>
 	</section>
+	<!-- footer section -->
 	<section id="footer" class="bg-grey">
 		<div class="contacts">
 			<div>
-				<i class="icon-facebook-circled icon-contact" ></i>
-				<span class="contact">Facebook</span>
+				<i class="icon-facebook-circled icon-contact "></i>
+				<span class="contact ">Facebook</span>
 			</div>
 			<div>
-				<i class="icon-linkedin-circled icon-contact"></i>
-				<span class="contact">Linkedin</span>
+				<i class="icon-linkedin-circled icon-contact "></i>
+				<span class="contact ">Linkedin</span>
 			</div>
 			<div>
-				<i class="icon-github-circled icon-contact"></i>
-				<span class="contact">Github</span>
+				<i class="icon-github-circled icon-contact "></i>
+				<span class="contact ">Github</span>
 			</div>
 		</div>
 	</section>
 	<script src="js/script.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
